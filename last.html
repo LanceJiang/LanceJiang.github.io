@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>last</title>
 		<link rel="stylesheet" href="./dist/css/style.min.css" />
-		<link rel="stylesheet" href="http:////at.alicdn.com/t/font_xjq4kgdgofo2mx6r.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_xjq4kgdgofo2mx6r.css" />
+		<link href="//cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="head">
@@ -41,7 +42,6 @@
 					<select name="" id="" class="select fl">
 						<option value="" class="option">产品</option>
 						<option value="" class="option">顾客</option>
-						<!--<span class="iconfont icon-2xia fr"></span>-->
 					</select>
 					<input type="text" class="input"  placeholder="请输入您要搜索的产品" />
 					<a href="" class="ss fr">搜索</a>
@@ -54,48 +54,49 @@
 				<div class="lb"></div>
 				<div class="lb lb2"></div>
 				<div class="txt_link cf">
-						<a href="index.html" class="active">首页</a>
+						<a href="index.html">首页</a>
 						<a href="second.html">采购商入口</a>
 						<a href="third.html">供应商入口</a>
-						<a href="last.html">金融授信</a>
+						<a href="last.html" class="active">金融授信</a>
 				</div>
-				<div class="mainTxt">
-					<div class="fl laba"></div>
-					<div class="fr txtDescribe">
-						<p>【活动时间】：<em class="blue_l ">2016年12月28日</em></p>
-						<p>【报名时间】：2016年12月5日-2016年12月16日</p>
-						<p>【商品审核时间】：2016年12月15日-2016年12月22日</p> 
-						<p>【报名对象】：面向玻璃行业的所有大中小企业</p>
-						<p>【报名方式】：登入玻璃网官方网站<a href="" class="login">http://www.lbw18.com/</a>参与报名 </p>
+				<div class="jinrongWrap">
+					<div class="jinrong">
+						<p class="sqsj">2016年12月5日~2016年12月28号</p>
+						<p class="sxsj">2016年12月28日</p>
+						<div class="sqtj">
+							<p>1.  成立时间为1年以上的企业</p>
+							<p> 2.  年营业额不少于500万的企业 </p>
+							<p>3.  必须链玻网平台认证通过的企业 </p>
+						</div>
+						<div class="sqlc">
+							<p>1.  在线注册，提交授信机构申请；</p>
+							<div class="h6">
+								<p>提交审核材料包括  </p>
+								<h6>企业营业执照（正副本）   </h6>
+								<h6>组织结构代码证（正副本）   </h6>
+								<h6>基本户开户许可证   </h6>
+								<h6>国税、地税登记扫描本  </h6>
+								<h6>验资报告</h6>
+							</div>
+							<p>2.  平台对授信机构信用进行审核评估 </p>
+							<p>3.  审核通过，签订合同，即可放款</p>
+						</div>
+						<p class="qytj">
+							 凡报名参与玻璃次日活动的企业，均可向 链玻网提交资金申请
+						</p>
+						<div class="hdgZ">
+							<p><em class="circle">A</em>活动期间未按约定为商家提供约定服务的企业，取消企业半年内参与链玻网任何活动资格；</p>
+							<p><em class="circle">B</em>活动商家的活动价格与实际成交价格不符，不履行交易，取消其参加往后所有链玻网相关活动的资格；</p>
+							<p><em class="circle">C</em>任何违反ab两条规则的企业，链玻网将永久不给予其金融授信</p>
+						</div>
+						<div class="lastLjsqBox">
+							<a href="" class="lastLjsq"  data-toggle="modal" data-target="#myModal">立即申请</a>
+							<p class="hhd">服务热线：<em>400-806-6188</em></p>
+							<p>*本次活动最终解释权归链玻网（www.lbw18.com）所有</p>
+						</div>
 					</div>
 				</div>
-				<div class="kapianBox">
-					<a href="" class="kapian fl">
-						<div class="cgs">
-							<div class="kpTxt">
-								<h1>采购商</h1>
-								<p>入口></p>
-							</div>
-						</div>
-					</a>
-					<a href="" class="kp fl margin_l">
-						<div class="gys">
-							<div class="kpTxt kpTxt_else">
-								<h1>供应商</h1>
-								<p>入口></p>
-							</div>
-						</div>
-					</a>
-					<a href="" class="kp fr ">
-						<div class="jr">
-							<div class="kpTxt kpTxt_else">
-								<h1>金融授信</h1>
-								<p>入口></p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div> 
+			</div>	 
 		</div>
 		<div class="footer">
 			<ul class="footer_main cf">
@@ -165,9 +166,21 @@
 					<a href="" class="fr cxwz"></a>
 					<a href="" class="fr cxwz kxwz"></a>
 					<a href=""class="fr cxwz wl"></a>
-					
 				</div>
 			</div>
 		</div>
+		<!-- Modal 弹框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<span class="times"></span>
+		    	<a href="" class="t_gys">我是供应商></a>
+		    	<a href="" class="t_cgs">我是采购商></a>
+		    </div>
+		  </div>
+		</div>
+		<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="./dist/js/index.js"></script>
 	</body>
 </html>

@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>third</title>
 		<link rel="stylesheet" href="./dist/css/style.min.css" />
-		<link rel="stylesheet" href="http:////at.alicdn.com/t/font_xjq4kgdgofo2mx6r.css" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_xjq4kgdgofo2mx6r.css" />
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="head">
@@ -54,9 +55,9 @@
 				<div class="lb"></div>
 				<div class="lb lb2"></div>
 				<div class="txt_link cf">
-						<a href="index.html" class="active">首页</a>
+						<a href="index.html">首页</a>
 						<a href="second.html">采购商入口</a>
-						<a href="third.html">供应商入口</a>
+						<a href="third.html" class="active">供应商入口</a>
 						<a href="last.html">金融授信</a>
 				</div>
 				<div class="mainTxt">
@@ -69,34 +70,53 @@
 						<p>【报名方式】：登入玻璃网官方网站<a href="" class="login">http://www.lbw18.com/</a>参与报名 </p>
 					</div>
 				</div>
-				<div class="kapianBox">
-					<a href="" class="kapian fl">
-						<div class="cgs">
-							<div class="kpTxt">
-								<h1>采购商</h1>
-								<p>入口></p>
-							</div>
+				<div class="enterBox">
+					<div class="lieboX">
+						<div class="lieContext liecontexT">
+							<h5>企业资质</h5>
+							<p>凡通过平台注册的企业皆可</p>
 						</div>
-					</a>
-					<a href="" class="kp fl margin_l">
-						<div class="gys">
-							<div class="kpTxt kpTxt_else">
-								<h1>供应商</h1>
-								<p>入口></p>
-							</div>
+						<div class="lieContext liecontexT2">
+							<h5>经营领域</h5>
+							<p>所有玻璃原片、深加工及下游玻璃企业</p>
 						</div>
-					</a>
-					<a href="" class="kp fr ">
-						<div class="jr">
-							<div class="kpTxt kpTxt_else">
-								<h1>金融授信</h1>
-								<p>入口></p>
-							</div>
+						<div class="lieContext liecontexT3">
+							<h5>优先权利</h5>
+							<p>当参加企业过多时，链玻网优先选择行业资质较深，信誉较好的企业进行合作</p>
 						</div>
-					</a>
+						<div class="lieContext  lieContext_1">
+							<h5>提前申请</h5>
+							<p>商家参与活动需提前一周向平台提交商品价格申请</p>
+						</div>
+						<div class="lieContext  lieContext_2">
+							<h5>销售价格</h5>
+							<p>报名企业需进行活动价格报备</p>
+						</div>
+						<div class="lieContext  lieContext_3">
+							<h5>商品数量</h5>
+							<p>提交商品的数量不少于<em class="red">3</em>条，无上限限制</p>
+						</div>
+						<a href="javascript:;" class="lkzc lkzc_1"  data-toggle="modal" data-target="#myModal">立刻注册</a>
+						<a href="javascript:;" class="lkzc lkzc_2"  data-toggle="modal" data-target="#myModal">立刻注册</a>
+					</div>
 				</div>
 			</div> 
+			<div class="fapiaoBox">
+				<div class="fpContent">
+					<p class="fpDescribe">•参与活动的企业必须明确标示所开发票的类型，以及开票信息</p>
+					<div class="hdgz">
+						<p><em class="fk">1</em>为保证活动的公平性，所有参与活动的采购商必须与 平台签订采购协议； </p>
+						<p><em class="fk">2</em>本次活动最终解释权归链玻网（www.lbw18.com）所有。</p>
+					</div>
+					<div class="hdlc">
+						<p><em class="fk">1</em>进入活动页面，报名注册，点击提交资料； </p>
+						<p><em class="fk">2</em>提交入驻商品及价格，等待平台审核；</p>
+						<p><em class="fk">3</em>审核通过，进入采购环节。</p>
+					</div>
+				</div>
+			</div>
 		</div>
+
 		<div class="footer">
 			<ul class="footer_main cf">
 				<li class="ft_fl">
@@ -165,9 +185,21 @@
 					<a href="" class="fr cxwz"></a>
 					<a href="" class="fr cxwz kxwz"></a>
 					<a href=""class="fr cxwz wl"></a>
-					
 				</div>
 			</div>
 		</div>
+		<!-- Modal 弹框-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<span class="times"></span>
+		    	<a href="" class="t_gys">我是供应商></a>
+		    	<a href="" class="t_cgs">我是采购商></a>
+		    </div>
+		  </div>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="./dist/js/index.js"></script>
 	</body>
 </html>

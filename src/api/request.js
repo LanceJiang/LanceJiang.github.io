@@ -1,0 +1,31 @@
+import {baseUrl, defaultUrl} from './config'
+import {showToast} from '../utils/index'
+
+// export function request (url, method = 'GET', data, header = {}) {
+export function request (options = {}) {
+  const {url = defaultUrl, method = "GET", data, header} = options;
+  return new Promise((resolve, reject) => {
+    wx.showLoading({title: '玩命加载中...'})
+    wx.request({
+      // url: baseUrl + url,
+      url: url, // temptemptemp
+      method,
+      data,
+      header: header || {'Content-Type': 'json'},
+      success: function (res) {
+        if (res.statusCode === 200) {
+          resolve(res.data)
+        } else {
+          showToast('发生未知错误!')
+          reject(res.data)
+        }
+      },
+      fail: function () {
+        showToast('获取数据失败!')
+      },
+      complete: function () {
+        wx.hideLoading()
+      }
+    })
+  })
+}
